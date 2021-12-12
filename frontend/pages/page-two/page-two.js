@@ -1,6 +1,7 @@
 class PageTwo {
     selectors = {
-        page: ".page-two"
+        page: ".page-two",
+        navigationButton: "#navigation"
     }
 
     components = {
@@ -9,11 +10,15 @@ class PageTwo {
 
     constructor() {
         this.init();
-        Logger.info(this.components.page);
     }
 
     init() {
         this.components.page = document.querySelector(this.selectors.page);
+
+        this.components.navigationButton = this.components.page.querySelector(this.selectors.navigationButton);
+        this.components.navigationButton.addEventListener("click", function(){
+            Events.dispatchNavigate(Routes.ONE);
+        });
     }
 
     update() {

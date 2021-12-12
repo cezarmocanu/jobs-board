@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="title"></title>
+        <!-- Style -->
+        <link rel="stylesheet" href="index.css"/>
+        <!-- Scripts -->
+        <script src="utils/events.js"></script>
+        <script src="constants.js"></script>
+        <script src="utils/logger.js"></script>
+        
+
+        <!--PAGE_ONE-->
+        <script src="pages/page-one/page-one.js"></script>
+
+        <!--PAGE_TWO-->
+        <script src="pages/page-two/page-two.js"></script>
+
+        <script src="utils/navigator.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <!-- TEMPLATES -->
+        <div class="template page-one">
+            
+            <h1>Page 1</h1>
+            <button id="navigation">Go to Page 2</button>
+        </div>
+        <!-- TEMPLATES -->
+        <div class="template page-two">
+            <h1>Page 2</h1>
+        </div>
+    </body>
+</html>

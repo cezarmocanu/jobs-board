@@ -17,9 +17,9 @@ class PageOne {
         this.components.page = document.querySelector(this.selectors.page);
 
         this.components.navigationButton = this.components.page.querySelector(this.selectors.navigationButton);
-        this.components.navigationButton.onclick = function(e) {
+        this.components.navigationButton.addEventListener("click", function(e) {
             Events.dispatchNavigate(Routes.TWO);
-        };
+        });
         
     }
 

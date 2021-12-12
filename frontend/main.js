@@ -12,7 +12,6 @@ document.addEventListener(Events.TYPE.NAVIGATE, function(event){
 class App {
     static init(){
         Navigator.init();
-        console.log("saf")
     }
 
     static update(){

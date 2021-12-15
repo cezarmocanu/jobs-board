@@ -17,7 +17,7 @@ class PageTwo {
 
         this.components.navigationButton = this.components.page.querySelector(this.selectors.navigationButton);
         this.components.navigationButton.addEventListener("click", function(){
-            Events.dispatchNavigate(Routes.ONE);
+            Events.dispatchNavigate(Routes.REGISTER_USER);
         });
     }
 

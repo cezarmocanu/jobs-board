@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title id="title"></title>
         <!-- Style -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="index.css"/>
         <!-- Scripts -->
         <script src="utils/events.js"></script>
@@ -14,7 +15,7 @@
         
 
         <!--PAGE_ONE-->
-        <script src="pages/page-one/page-one.js"></script>
+        <script src="pages/register-user/register-user.js"></script>
 
         <!--PAGE_TWO-->
         <script src="pages/page-two/page-two.js"></script>
@@ -24,15 +25,50 @@
     </head>
     <body>
         <!-- TEMPLATES -->
-        <div class="template page-one">
-            
-            <h1>Page 1</h1>
-            <button id="navigation">Go to Page 2</button>
+        <div class="template register-user container-fluid">
+            <div class="row">
+                <div class="col-6 m-auto p-2">
+                    <h1>Register</h1>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="inputFirstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="inputFirstName" placeholder="Enter first name"/>
+                            <div class=" mt-1">
+                                <span id="spanFirstName" class="text-danger">Erorr</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputLastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="inputLastName" placeholder="Enter last name"/>
+                            <div class=" mt-1">
+                                <span id="spanLastName" class="text-danger">Erorr</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="abcd@yahoo.com"/>
+                            <div class=" mt-1">
+                                <span id="spanEmail" class="text-danger">Erorr</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Maybe a good one"/>
+                            <div class=" mt-1">
+                                <span id="spanPassword" class="text-danger">Erorr</span>
+                            </div>
+                        </div>
+                    </form>
+                    <button id="navigation" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+
         </div>
         <!-- TEMPLATES -->
         <div class="template page-two">
             <h1>Page 2</h1>
             <button id="navigation">Go to Page 1</button>
+        
         </div>
     </body>
 </html>

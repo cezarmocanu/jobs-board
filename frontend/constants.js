@@ -7,6 +7,6 @@ class Constants {
 }
 
 class Routes {
-    static ONE = "ROUTE_ONE";
+    static REGISTER_USER = "REGISTER_USER";
     static TWO = "ROUTE_TWO";
 }

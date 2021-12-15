@@ -1,5 +1,5 @@
 class Navigator{
-    static INTITIAL_ROUTE = Routes.REGISTER_USER;
+    static INTITIAL_ROUTE = Routes.LOGIN_USER;
     static ROUTE_COMPONENTS = null
     static CURRENT_ROUTE = null;
     static CURRENT_COMPONENT = null;
@@ -7,7 +7,7 @@ class Navigator{
     static init(){
         Navigator.ROUTE_COMPONENTS = {
             [Routes.REGISTER_USER] : new RegisterUser(),
-            [Routes.TWO]: new PageTwo()
+            [Routes.LOGIN_USER]: new LoginUser()
         };
 
         Navigator.navigateTo(Navigator.INTITIAL_ROUTE);

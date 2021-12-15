@@ -18,7 +18,7 @@
         <script src="pages/register-user/register-user.js"></script>
 
         <!--PAGE_TWO-->
-        <script src="pages/page-two/page-two.js"></script>
+        <script src="pages/login-user/login-user.js"></script>
 
         <script src="utils/navigator.js"></script>
         <script src="main.js"></script>
@@ -48,14 +48,14 @@
                             <label for="inputEmail" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="inputEmail" placeholder="abcd@yahoo.com"/>
                             <div class=" mt-1">
-                                <span id="spanEmail" class="text-danger">Erorr</span>
+                                <span id="spanEmail" class="text-danger">Error</span>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="inputPassword" class="form-label">Password</label>
                             <input type="password" class="form-control" id="inputPassword" placeholder="Maybe a good one"/>
                             <div class=" mt-1">
-                                <span id="spanPassword" class="text-danger">Erorr</span>
+                                <span id="spanPassword" class="text-danger">Error</span>
                             </div>
                         </div>
                     </form>
@@ -65,10 +65,30 @@
 
         </div>
         <!-- TEMPLATES -->
-        <div class="template page-two">
-            <h1>Page 2</h1>
-            <button id="navigation">Go to Page 1</button>
-        
+        <div class="template login-user container-fluid">
+            <div class="row">
+                <div class="col-6 m-auto p-2">
+                    <h1>Login</h1>
+                    <form action="">
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input id="inputEmail" type="text" class="form-control" placeholder="abcd@yahoo.com"/>
+                        <div class="mt-1">
+                            <span id="spanEmail" class="text-danger">Error</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input id="inputPassword" type="password" class="form-control" placeholder="I hope you remember"/>
+                        <div class="mt-1">
+                            <span id="spanPassword" class="text-danger">Error</span>
+                        </div>
+                    </div>
+                    </form>
+                    <button id="navigation" class="btn btn-primary">Login</button>
+                </div>
+            </div>
         </div>
     </body>
 </html>

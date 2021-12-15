@@ -45,7 +45,7 @@ class RegisterUser {
         this.components.navigationButton = this.components.page.querySelector(this.selectors.navigationButton);
         this.components.navigationButton.addEventListener("click", (e) => {
             if(this.validate()){
-                Events.dispatchNavigate(Routes.TWO);
+                Events.dispatchNavigate(Routes.LOGIN_USER);
             }
             
         });

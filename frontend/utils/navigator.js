@@ -7,7 +7,8 @@ class Navigator{
     static init(){
         Navigator.ROUTE_COMPONENTS = {
             [Routes.REGISTER_USER] : new RegisterUser(),
-            [Routes.LOGIN_USER]: new LoginUser()
+            [Routes.LOGIN_USER]: new LoginUser(),
+            [Routes.DASHBOARD_USER]: new DashboardUser()
         };
 
         Navigator.navigateTo(Navigator.INTITIAL_ROUTE);

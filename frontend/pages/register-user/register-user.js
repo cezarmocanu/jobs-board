@@ -9,7 +9,8 @@ class RegisterUser {
         spanFirstName: "#spanFirstName",
         spanLastName: "#spanLastName",
         spanEmail: "#spanEmail",
-        spanPassword: "#spanPassword" 
+        spanPassword: "#spanPassword",
+        toLoginButton: "#toLogin" 
     };
 
     components = {
@@ -42,10 +43,15 @@ class RegisterUser {
         this.components.spanPassword = this.components.page.querySelector(this.selectors.spanPassword);
         this.components.spanPassword.classList.add("hidden");
 
+        this.components.toLoginButton = this.components.page.querySelector(this.selectors.toLoginButton);
+        this.components.toLoginButton.addEventListener("click", (d) => {
+            Events.dispatchNavigate(Routes.LOGIN_USER);
+        })
+
         this.components.navigationButton = this.components.page.querySelector(this.selectors.navigationButton);
         this.components.navigationButton.addEventListener("click", (e) => {
             if(this.validate()){
-                Events.dispatchNavigate(Routes.LOGIN_USER);
+                Events.dispatchNavigate(Routes.DASHBOARD_USER);
             }
             
         });
